@@ -1,11 +1,15 @@
-message=input(">")
-word=message.split(" ")
-emojis={
-    ":)":"😀",
-    ":(":"😞",
-    ":|":"😑",
-}
-output=""
-for word in word:
-    output+=emojis.get(word,word)+" "
+def emoji_dictionary(message):
+    emojis = {
+        ":)": "😀",
+    ":(": "😞",
+    ":|": "😑",
+    }
+    output = ""
+    words = message.split()  # Split into words (descriptive variable name)
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output  # Return the final output string
+
+message = input("> ")
+output = emoji_dictionary(message)
 print(output)
