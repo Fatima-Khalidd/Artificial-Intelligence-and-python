@@ -1,0 +1,25 @@
+choice = ""
+started= False
+while choice.lower()!= "quit":
+    choice = input("> ").lower()
+    if choice =='help':
+      print("Start - to start the car ")
+      print("Stop - to stop the car ")
+      print("quit - to quit the program ")
+    elif choice == 'start':
+        if started:
+            print("Car has already been started")
+        else:
+            started = True
+            print("Car has been started.... Ready to go")
+    elif choice=="stop":
+        if not started:
+            print("Cas is already stopped!")
+        else:
+            started = False
+            print("Car has been stopped")
+    elif choice!="quit":
+        print('i do not understand this')
+
+
+
