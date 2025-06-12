@@ -9,7 +9,7 @@ def generate_population(pop_size,max_length):
 
 # fitness function to evaluate the solution how accurate fibonacci number is
 def fitness(individual):
-    fibonacci= [0, 1,1,2,3,5,8,13,21,34] # correct fibonacci numbers, fitness should match this
+    fibonacci= [0, 1,1,2,3,5,8,13,21,34] # correct fibonacci numbers
     score=0
     for i in range(len(fibonacci)):
         predicted=individual[i]
